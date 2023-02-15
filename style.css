@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffbf0;
+}
+
+/* BARRA DE NAVEGACIÓN */
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+  
+nav a:hover {
+    background-color: #333;
+}
+
+.portrait{
+    margin-top: 10px;
+    width: 85vw;
+    height: 40vw;
+    margin: auto;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.portada{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    transition: 1.5s;
+}
+
+.portada:hover{
+    filter: grayscale(0%);
+    transition: 1.5s;
+}
+
+/* CIUDADES */
+#ciudades{
+    margin-top: 10px;
+    width: 85vw;
+    height: 100vw;
+    margin: auto;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 15vw;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.imgCard{
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
