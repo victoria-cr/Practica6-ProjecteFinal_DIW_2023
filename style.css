@@ -34,12 +34,21 @@ nav a:hover {
     background-color: #333;
 }
 
+header{
+    display:flex;
+    justify-content: center;
+}
+.logoIMG{
+    position: absolute;
+    left: 20px; 
+}
+/* PORTADA */
+
 .portrait{
     margin-top: 10px;
     width: 85vw;
     height: 40vw;
     margin: auto;
-    background-color: red;
     border-radius: 5px;
 }
 
@@ -49,6 +58,7 @@ nav a:hover {
     border-radius: 5px;
     filter: grayscale(100%);
     transition: 1.5s;
+    position: sticky;
 }
 
 .portada:hover{
@@ -60,7 +70,7 @@ nav a:hover {
 #ciudades{
     margin-top: 10px;
     width: 85vw;
-    height: 100vw;
+    height: 80vw;
     margin: auto;
 }
 
@@ -73,6 +83,9 @@ nav a:hover {
     transform: translateX(0px);
     transition: 0.5s ease;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    position: sticky;
+    top: 10px;
 }
 
 .one{
@@ -96,3 +109,20 @@ nav a:hover {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+.one{
+    background-color: #000000;
+}
+
+.two{
+    background-color: blue;
+}
+
+.tres{
+    background-color: aqua;
+}
+
+.cuatro{
+    background-color: red;
+}
+
