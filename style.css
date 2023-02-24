@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fffbf3;
+    background-color: #F4F4F4;
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -17,8 +17,8 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     height: 100%;
 }
   
@@ -31,7 +31,7 @@ nav a {
 }
   
 nav a:hover {
-    background-color: #333;
+    color: #f706b6;
 }
 
 header{
@@ -43,19 +43,28 @@ header{
     left: 20px; 
 }
 /* PORTADA */
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
 
 .portrait{
     margin-top: 10px;
     width: 85vw;
-    height: 40vw;
+    height: 35vw;
     margin: auto;
-    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .portada{
     width: 100%;
     height: 100%;
-    border-radius: 5px;
     filter: grayscale(100%);
     transition: 1.5s;
     position: sticky;
@@ -73,53 +82,4 @@ header{
     height: 80vw;
     margin: auto;
 }
-
-/* GALLERY (FREE FRONTEND) */
-.gallery {
-    display: flex;
-    padding: 2px;
-    transition: 0.3s;
-  }
-  .gallery:hover .gallery__image {
-    filter: grayscale(1);
-  }
-  .gallery__column {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-  }
-  .gallery__link {
-    margin: 2px;
-    overflow: hidden;
-  }
-  .gallery__link:hover .gallery__image {
-    filter: grayscale(0);
-  }
-  .gallery__link:hover .gallery__caption {
-    opacity: 1;
-  }
-  .gallery__thumb {
-    position: relative;
-  }
-  .gallery__image {
-    display: block;
-    width: 100%;
-    transition: 0.3s;
-  }
-  .gallery__image:hover {
-    transform: scale(1.1);
-  }
-  .gallery__caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 25px 15px 15px;
-    width: 100%;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    color: white;
-    opacity: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    transition: 0.3s;
-  }
 
