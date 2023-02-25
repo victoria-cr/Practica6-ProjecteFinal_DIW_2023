@@ -47,39 +47,30 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
 
 .portrait{
-    margin-top: 10px;
-    width: 85vw;
-    height: 35vw;
+    width: 80vw;
+    height: 40vw;
     margin: auto;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background-color: #E3E3E3;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.portada{
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    transition: 1.5s;
-    position: sticky;
-}
-
-.portada:hover{
-    filter: grayscale(0%);
-    transition: 1.5s;
-}
 
 /* CIUDADES */
 #ciudades{
     margin-top: 10px;
     width: 85vw;
     height: 80vw;
+    margin: auto;
+}
+
+.logo{
+    display: block;
     margin: auto;
 }
 

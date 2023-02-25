@@ -10,9 +10,6 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <img class="logoIMG" src="./img/logo.png" alt="LOGO" width="9%">
-            </div>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#ciudades">Ciudades</a></li>
@@ -22,10 +19,12 @@
     </header>
     <main>
         <section id="inicio">
-            <div class="portrait">
-                <!-- <img class="portada" src="https://bonodiscotecasmallorca.com/img/bcm-mallorca-discoteca-bono.jpg" alt="Portada" srcset=""> -->
+            <div class="portrait" data-tilt data-tilt-max="3" data-tilt-speed="40" data-tilt-perspective="900" data-tilt-reset="false">
+                <img class="logo" src="./img/logo.png" alt="LOGO">
             </div>
         </section>
     </main>
+
+    <script type="text/javascript" src="VanillaTilt/vanilla-tilt.min.js"></script>
 </body>
 </html>
