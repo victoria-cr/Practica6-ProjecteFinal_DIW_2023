@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>DiscoSpain</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#ciudades">Ciudades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        
         </nav>
     </header>
     <main>
-        <section id="inicio">
-            <div class="portrait" data-tilt data-tilt-max="3" data-tilt-speed="40" data-tilt-perspective="900" data-tilt-reset="false">
-                <img class="logo" src="./img/logo.png" alt="LOGO">
-            </div>
+      <section id="inicio">
+        <section class="portada">
+          <div class="portrait">
+            <img class="logo" src="./img/logo.png" alt="LOG" />
+          </div>
         </section>
+        <section class="info">
+          <div class="card">
+            <div class="title">DISCOSPAIN</div>
+            <div class="line"></div>
+            <div class="description">
+                En esta web repasaremos las mejores discotecas de las principales comunidades
+                autonomas de España. Podrás conocer los diferentes ambientes según vayas cambiando de lugar.
+                Una guía imprescindible si sales mas noches que el camión de la basura. Si cuando vas a pedir las vacaciones
+                y te dicen 6 dias y 7 noches, tu respondes. Quitame los dias! Solo quiero las noches!
+            </div>
+          </div>
+        </section>
+        <section class="city">
+          <div class="card">
+            <img class="coverImg" src="https://estaticos-cdn.prensaiberica.es/clip/6bbbbe7b-98e7-4d00-bfa6-c20b52af26f6_16-9-discover-aspect-ratio_default_0.jpg" alt="">
+            <div class="title">Palma de Mallorca</div>
+          </div>
+        </section>
+      </section>
     </main>
-
-    <script type="text/javascript" src="VanillaTilt/vanilla-tilt.min.js"></script>
-</body>
+  </body>
 </html>

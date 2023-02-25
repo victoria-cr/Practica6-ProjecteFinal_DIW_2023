@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/kiona-2');
 body {
     margin: 0;
     padding: 0;
@@ -6,8 +7,7 @@ body {
 }
 
 /* BARRA DE NAVEGACIÓN */
-header {
-    margin-top: 20px;
+/* header {
     margin-bottom: 20px;
     height: 50px;
 }
@@ -37,18 +37,8 @@ nav a:hover {
 header{
     display:flex;
     justify-content: center;
-}
-.logoIMG{
-    position: absolute;
-    left: 20px; 
-}
+} */
 /* PORTADA */
-#inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .portrait{
     width: 80vw;
     height: 40vw;
@@ -57,20 +47,74 @@ header{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    margin-top: 5%;
 }
 
-
-/* CIUDADES */
-#ciudades{
-    margin-top: 10px;
-    width: 85vw;
-    height: 80vw;
-    margin: auto;
+section{
+    width: 100%;
+    height: 100vh;
+    /* Hace que el scroll se vaya directamente al proximo section */
+    scroll-snap-align: start;
 }
 
 .logo{
     display: block;
     margin: auto;
+    margin-bottom: 15%;
+    z-index: 1;
 }
 
+/* CARTAS */
+
+.card{
+    width: 150vh;
+    height: 70vh;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+}
+
+/* INTRODUCCION */
+.title{
+    width: 30vw;
+    margin: 0px auto 40px;
+    font-family: 'Kiona', sans-serif;
+    line-height: 33px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+/* linea entre titulo y descripción */
+.line{
+    margin-left: 50%;
+    border-left: 1px solid #333;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.description{
+    width: 50%;
+    margin-top: 40px;
+    margin: auto;
+    font-family: 'Kiona', sans-serif;
+    text-align: justify;
+    line-height: 33px;
+    color: #333;
+}
+
+/* CIUDAD */
+
+.coverImg{
+    height: 100%; 
+    width: 25vw;
+    object-fit: cover;
+    position: absolute;
+}
