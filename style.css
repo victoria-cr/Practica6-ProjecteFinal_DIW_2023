@@ -10,6 +10,7 @@ body {
 }
 /* BARRA DE NAVEGACIÓN */
 
+
 .navigation{
     position: fixed;
     left: 0%;
@@ -75,26 +76,7 @@ section{
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-      width: 100%;
-      height: 100%;
-    }
-
-    .coverImg{
-        display: none;
-    }
-
-    .description{
-        width: 80%;
-    }
-
-    .line{
-        display: none;
-    }
-  }
+}  
 
 /* INTRODUCCION */
 .title{
@@ -106,7 +88,7 @@ section{
     text-align: center;
     font-size: 30px;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 /* linea entre titulo y descripción */
@@ -114,7 +96,7 @@ section{
     margin-left: 50%;
     border-left: 1px solid #333;
     height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .description{
@@ -125,15 +107,15 @@ section{
     font-family: 'Kiona', sans-serif;
     text-align: center;
     line-height: 33px;
+    font-size: 15px;
     color: #333;
 }
-
 
 /* CIUDAD */
 
 .coverImg{
     height: 100%; 
-    width: 30%;
+    width: 40%;
     object-fit: cover;
     position: absolute;
 }
@@ -141,6 +123,89 @@ section{
 .titlePM{
     display: flex;
     float: right;
-    background-color: red;
-    width: 70%;
+    width: 60%;
+    margin: 0px auto 40px;
+    font-family: Kiona, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 400;
 }
+
+.cityTitle{
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 2em;
+    text-align: left;
+}
+
+.cityDesc{
+    width: 40%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 46%;
+    font-family: 'Kiona', sans-serif;
+    line-height: 33px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* CARROUSEL */
+
+.gallery-cell{
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.gallery-cell::before{
+    /* content: counter(gallery-cell); */
+    display: block;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 800px) {
+    .card {
+      width: 80%;
+      height: 90%;
+    }
+
+    .coverImg{
+        filter: brightness(50%);
+        width: 100%;
+    }
+
+    .description{
+        width: 80%;
+    }
+
+    .cityDesc{
+        display: none;
+    }
+    .gallery-cell{
+        position: relative;
+    }
+
+    .titlePM{
+        position: absolute;
+        margin: 0;
+        top: 60%;
+        left: 37%;
+        margin: -50px 0 0 -50px;
+    }
+    .cityTitle{
+        width: 80%;
+        margin-bottom: 0px;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+    }
+  }

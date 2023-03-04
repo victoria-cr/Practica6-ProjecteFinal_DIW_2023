@@ -5,22 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Carrousel -->
+    <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
     <title>DiscoSpain</title>
   </head>
 
   <body>
-    <header>
-        <nav>
-          <div class="navigation">
-            <a href="#about">ABOUT</a>
-            <a href="#top">HOME</a>
-            <a href="#city">CIUDADES</a>
-          </div>
-        </nav>
-        <div class="arrows">
-
-        </div>
-    </header>
     <main id="top">
         <section class="portada">
           <div class="portrait">
@@ -40,10 +31,59 @@
           </div>
         </section>
         <section id="city" class="city">
-          <div class="card">
-            <img class="coverImg" src="https://estaticos-cdn.prensaiberica.es/clip/6bbbbe7b-98e7-4d00-bfa6-c20b52af26f6_16-9-discover-aspect-ratio_default_0.jpg" alt="">
-            <div class="titlePM">Palma de Mallorca</div>
+          <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true  }'>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://turismo.eivissa.es/wp-content/uploads/2017/01/ARCHIVO-TURISMO__SGC7673140701__SGC7673.jpg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">IBIZA</h2>
+            </div>
+            <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati deserunt repellendus nesciunt incidunt suscipit unde molestiae?</div>
+            <div class="horizontal_Line"></div>
           </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://futurociudades.tec.mx/sites/g/files/vgjovo1811/files/Barcelona-ciudad.jpg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">BARCELONA</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://a.cdn-hotels.com/gdcs/production133/d1207/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">MADRID</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://www.lavanguardia.com/files/article_main_microformat/files/fp/uploads/2021/12/09/61b1e072dd1f0.r_d.1892-1161-3171.jpeg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">MALLORCA</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://img2.rtve.es/i/?w=1600&i=1602241477802.jpg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">VALENCIA</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://www.spain.info/export/sites/segtur/.content/images/cabecera/vista-general-donosti-53986096-istock.jpg" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">SAN SEBASTIÁN</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+          <div class="card gallery-cell">
+            <img class="coverImg" src="https://i0.wp.com/jj-nerjarentals.com/wp-content/uploads/2020/05/Marina-Puerto-Banus-Marbella-3.jpg?resize=1140%2C664&ssl=1" alt="">
+            <div class="titlePM">
+              <h2 class="cityTitle">MARBELLA</h2>
+            </div>
+            <div class="horizontal_Line"></div>
+          </div>
+        </div>
         </section>
     </main>
   </body>
