@@ -5,64 +5,52 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+
+    font-family: 'Kiona', sans-serif;
     background-color: #F4F4F4;
 }
 /* BARRA DE NAVEGACIÓN */
-
-
-.navigation{
+nav {
+    height: 50px;
+    width: 100%;
+    /* position: absolute; */
     position: fixed;
-    left: 0%;
-    top: 0%;
-    right: auto;
-    bottom: 0%;
-    display: flex;
-    width: 15vh;
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    font-family: 'Kiona', sans-serif;
-    transform: rotate(-90deg);
-    font-size: 24px;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.navigation a{
+.nav-links a{
     text-decoration: none;
-    color: black;
-    margin-left: 30%;
+    color: #333;
+    font-size: 20px;
+    margin-left: 5%;
 }
-
-
 
 /* PORTADA */
 .portrait{
     width: 80%;
     height: 80%;
     margin: auto;
-    /* background-color: #E3E3E3; */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border: 1px solid rgba( 255, 255, 255, 0.18);
     margin-top: 5%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section{
     width: 100%;
     height: 100vh;
-    /* Hace que el scroll se vaya directamente al proximo section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
-    display: block;
-    margin: auto;
-    margin-bottom: 15%;
-    z-index: 1;
     width: 50%;
 }
 
@@ -83,11 +71,9 @@ section{
     width: 100%;
     margin: auto;
     font-family: 'Kiona', sans-serif;
-    line-height: 33px;
-    font-weight: 400;
     text-align: center;
     font-size: 30px;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 
@@ -101,17 +87,28 @@ section{
 
 .description{
     width: 50%;
-    height: 100%;
-    margin-top: 40%;
+    margin-top: 10%;
     margin: auto;
     font-family: 'Kiona', sans-serif;
     text-align: center;
     line-height: 33px;
-    font-size: 15px;
     color: #333;
 }
 
 /* CIUDAD */
+
+button{
+    margin-top: 40px;
+    font-size: 16px;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.city{
+    width: 100%;
+}
 
 .coverImg{
     height: 100%; 
@@ -154,6 +151,11 @@ section{
 
 /* CARROUSEL */
 
+.gallery{
+    width: 100%;
+    height: 80vh;
+}
+
 .gallery-cell{
     width: 70%;
     height: 70vh;
@@ -171,6 +173,13 @@ section{
 
 /* RESPONSIVE */
 @media only screen and (max-width: 800px) {
+    nav{
+        display: none;
+    }
+    .portrait{
+        width: 80%;
+        height: 90%;
+    }
     .card {
       width: 80%;
       height: 90%;
@@ -182,15 +191,19 @@ section{
     }
 
     .description{
-        width: 80%;
+        width: 100%;
+    }
+
+    .line{
+        display: none;
     }
 
     .cityDesc{
         display: none;
     }
-    .gallery-cell{
+    /* .gallery-cell{
         position: relative;
-    }
+    } */
 
     .titlePM{
         position: absolute;
