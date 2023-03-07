@@ -5,7 +5,6 @@ html{
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'Kiona', sans-serif;
     background-color: #F4F4F4;
 }
@@ -13,8 +12,6 @@ body {
 nav {
     height: 50px;
     width: 100%;
-    /* position: absolute; */
-    position: fixed;
     text-align: center;
     margin-top: 25px;
 }
@@ -42,7 +39,7 @@ nav {
     justify-content: center;
 }
 
-section{
+.portada{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -93,6 +90,7 @@ section{
     text-align: center;
     line-height: 33px;
     color: #333;
+    margin-bottom: 10%;
 }
 
 /* CIUDAD */
@@ -100,10 +98,21 @@ section{
 button{
     margin-top: 40px;
     font-size: 16px;
-    background-color: white;
+    background-color: transparent;
+    cursor: pointer;
     width: 200px;
     height: 50px;
     border-radius: 50px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+a{
+    text-decoration: none;
+    color: #333;
 }
 
 .city{
@@ -154,6 +163,7 @@ button{
 .gallery{
     width: 100%;
     height: 80vh;
+    margin-bottom: 5%;
 }
 
 .gallery-cell{
@@ -171,6 +181,38 @@ button{
     display: block;
 }
 
+/* CIUDADES */
+.navLogo{
+    position: absolute;
+}
+.inCity{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.cityImg{
+    z-index: -1;
+}
+
+.ibiza{
+    width: 70%;
+}
+
+.map{
+    width: 70%;
+    height: 30vh;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 800px) {
     nav{
@@ -182,7 +224,7 @@ button{
     }
     .card {
       width: 80%;
-      height: 90%;
+      /* height: 90%; */
     }
 
     .coverImg{
@@ -191,19 +233,12 @@ button{
     }
 
     .description{
-        width: 100%;
-    }
-
-    .line{
-        display: none;
+        width: 90%;
     }
 
     .cityDesc{
         display: none;
     }
-    /* .gallery-cell{
-        position: relative;
-    } */
 
     .titlePM{
         position: absolute;
@@ -219,6 +254,9 @@ button{
         margin-left: 0%;
         font-size: 2em;
         text-align: center;
+        color: white;
+    }
+    a{
         color: white;
     }
   }

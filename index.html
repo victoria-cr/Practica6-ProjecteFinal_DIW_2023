@@ -17,7 +17,7 @@
     <nav>
       <div class="nav-links">
         <a href="#top">Inicio</a>
-        <a href="#about">Información</a>
+        <a href="#info">Información</a>
         <a href="#city">Ciudades</a>
       </div>
     </nav>
@@ -25,113 +25,110 @@
   <main id="top">
     <section class="portada">
       <div class="portrait">
-        <img class="logo" src="./img/logo.png" alt="LOG" />
+        <img class="logo" src="./img/logo.png" alt="LOG"/>
       </div>
     </section>
-    <section id="about" class="info">
-      <div class="card">
-        <div class="title">DISCOSPAIN</div>
-        <div class="line"></div>
-        <div class="description">
-          En esta web repasaremos las mejores discotecas de las ciudades de España.
-          Podrás conocer los diferentes ambientes según vayas cambiando de lugar.
-          Una guía imprescindible si sales mas noches que el camión de la basura. Si cuando vas a pedir las vacaciones
-          y te dicen 6 dias y 6 noches, tu respondes. Quitame los dias! Solo quiero las noches!
-        </div>
-      </div>
-    </section>
+
+    <div id="info" class="title">DISCOSPAIN</div>
+    <div class="line"></div>
+    <div class="description">
+      En esta web repasaremos las mejores discotecas de las ciudades de España.
+      Podrás conocer los diferentes ambientes según vayas cambiando de lugar.
+      Una guía imprescindible si sales mas noches que el camión de la basura. Si cuando vas a pedir las vacaciones
+      y te dicen 6 dias y 6 noches, tu respondes. Quitame los dias! Solo quiero las noches!
+    </div>
+
 
     <div id="city" class="gallery js-flickity" data-flickity-options='{ "wrapAround": true  }'>
       <div class="card gallery-cell">
         <img class="coverImg"
-          src="https://turismo.eivissa.es/wp-content/uploads/2017/01/ARCHIVO-TURISMO__SGC7673140701__SGC7673.jpg"
+          src="./img/Ibiza.webp"
           alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">IBIZA</h2>
+          <h2 class="cityTitle"><a href="./cities/ibiza.html">IBIZA</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          Ibiza es mundialmente conocida por su vida nocturna, encontramos discoteca como Hï Ibiza, Usuhaïa o Pachá
 
           <button onclick="location.href='./cities/ibiza.html'" type="button">Saber más</button>
+
+
         </div>
       </div>
       <div class="card gallery-cell">
-        <img class="coverImg" src="https://futurociudades.tec.mx/sites/g/files/vgjovo1811/files/Barcelona-ciudad.jpg"
+        <img class="coverImg" src="./img/Barcelona.webp"
           alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">BARCELONA</h2>
+          <h2 class="cityTitle"><a href="./cities/barcelona.html">BARCELONA</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          En una de las ciudades mas importantes de España encontramos discotecas como Sutton, Opium o Shoko
 
           <button onclick="location.href='./cities/barcelona.html'" type="button">Saber más</button>
+
         </div>
       </div>
       <div class="card gallery-cell">
         <img class="coverImg"
-          src="https://a.cdn-hotels.com/gdcs/production133/d1207/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg" alt="">
+          src="./img/Madrid.webp" alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">MADRID</h2>
+          <h2 class="cityTitle"><a href="./cities/madrid.html">MADRID</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          Si lo que quieres es disfrutar en plena capital, no te pierdas las discotecas Fabrik, Shoko Madrid o Teatro
+          Kapital
 
           <button onclick="location.href='./cities/madrid.html'" type="button">Saber más</button>
         </div>
       </div>
       <div class="card gallery-cell">
         <img class="coverImg"
-          src="https://www.lavanguardia.com/files/article_main_microformat/files/fp/uploads/2021/12/09/61b1e072dd1f0.r_d.1892-1161-3171.jpeg"
+          src="./img/Mallorca.webp"
           alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">MALLORCA</h2>
+          <h2 class="cityTitle"><a href="./cities/mallorca.html">MALLORCA</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          ¿A quien no le gusta Mallorca? Pues te encantará más cuando vayas a BCM, Social Club o Banana
 
           <button onclick="location.href='./cities/mallorca.html'" type="button">Saber más</button>
         </div>
       </div>
       <div class="card gallery-cell">
-        <img class="coverImg" src="https://img2.rtve.es/i/?w=1600&i=1602241477802.jpg" alt="">
+        <img class="coverImg" src="./img/Valencia.webp" alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">VALENCIA</h2>
+          <h2 class="cityTitle"><a href="./cities/valencia.html">VALENCIA</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          Sabemos que eres de los que recuerda La Ruta del Bacalao, recuerdala yendo a Spook, Mya Club o Bombola
 
           <button onclick="location.href='./cities/valencia.html'" type="button">Saber más</button>
         </div>
       </div>
       <div class="card gallery-cell">
         <img class="coverImg"
-          src="https://www.spain.info/export/sites/segtur/.content/images/cabecera/vista-general-donosti-53986096-istock.jpg"
+          src="./img/Sebastian.webp"
           alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">SAN SEBASTIÁN</h2>
+          <h2 class="cityTitle"><a href="./cities/sebastian.html">SAN SEBASTIÁN</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">
+          Playa de la concha, cocaina y no se que mas hay en San Sebastián. Bueno si, Loquillo vive ahí pero no tiene
+          pinta de ir a discotecas como Bataplan, Komplot, Dabadaba
+
 
           <button onclick="location.href='./cities/sebastian.html'" type="button">Saber más</button>
         </div>
       </div>
       <div class="card gallery-cell">
         <img class="coverImg"
-          src="https://i0.wp.com/jj-nerjarentals.com/wp-content/uploads/2020/05/Marina-Puerto-Banus-Marbella-3.jpg?resize=1140%2C664&ssl=1"
+          src="./img/Marbella.webp"
           alt="">
         <div class="titlePM">
-          <h2 class="cityTitle">MARBELLA</h2>
+          <h2 class="cityTitle"><a href="./cities/marbella.html">MARBELLA</a></h2>
         </div>
-        <div class="cityDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sunt laborum sed fuga culpa necessitatibus unde. Asperiores, esse eum, a culpa iste voluptatem obcaecati
-          deserunt repellendus nesciunt incidunt suscipit unde molestiae?
+        <div class="cityDesc">Seamos sinceros, si estás en Marbella es porque te has jubilado y eres del PP (o incluso
+          de VOX), pero si no, aqui tienes estas discotecas Funky Buddah, Tibu Banus y Old Vip
 
           <button onclick="location.href='./cities/marbella.html'" type="button">Saber más</button>
         </div>
