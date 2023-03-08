@@ -185,13 +185,34 @@ a{
 .navLogo{
     position: absolute;
 }
-.inCity{
-    margin-top: 3%;
-    margin-bottom: 5%;
+
+.introduction{
+    width: 70%;
+    height: 30vh;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.202);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 5%;
 }
 
-.cityImg{
+.introduction img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
     z-index: -1;
+}
+
+.introTitle{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
 }
 
 .ibiza{
@@ -247,16 +268,14 @@ iframe{
         left: 37%;
         margin: -50px 0 0 -50px;
     }
-    .cityTitle{
-        width: 80%;
-        margin-bottom: 0px;
-        margin-top: 0%;
-        margin-left: 0%;
-        font-size: 2em;
-        text-align: center;
+    
+    .introTitle{
+        margin-top: 20%;
+        font-size: 20px;
+    }
+
+    .cityTitle a{
         color: white;
     }
-    a{
-        color: white;
-    }
-  }
+    
+}
